@@ -4,6 +4,7 @@
 
 /**
 * _printf - prints anything
+*
 * @format: list of argument types passed to the function
 *
 * Return: number of characters printed
