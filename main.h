@@ -10,6 +10,7 @@ int _putchar(char c);
 * struct format - Struct format
 *
 * @type: The format
+*
 * @print: The function associated
 */
 typedef struct format
