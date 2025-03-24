@@ -3,11 +3,11 @@
 #include <stddef.h>
 
 /**
-* print_char - function use to print a char.
+* print_char - function use to print a char
 *
-* @arg: Character to print.
+* @arg: Character to print
 *
-* Return: Always void.
+* Return: Always void
 */
 void print_char(va_list *arg)
 {
@@ -15,11 +15,11 @@ void print_char(va_list *arg)
 }
 
 /**
-* print_int - function use to print an integer.
+* print_int - function use to print an integer
 *
-* @arg: integer to print.
+* @arg: integer to print
 *
-* Return: Always void.
+* Return: Always void
 */
 void print_int(va_list *arg)
 {
@@ -61,11 +61,11 @@ void print_int(va_list *arg)
 }
 
 /**
- * print_unsigned - function use to print an unsigned integer.
+ * print_unsigned - function use to print an unsigned integer
  *
- * @arg: unsigned integer to print.
+ * @arg: unsigned integer to print
  *
- * Return: Always void.
+ * Return: Always void
  */
 void print_unsigned(va_list *arg)
 {
@@ -97,11 +97,11 @@ void print_unsigned(va_list *arg)
 }
 
 /**
-* print_string - function use to print a string.
+* print_string - function use to print a string
 *
-* @arg: string to print.
+* @arg: string to print
 *
-* Return: Always void.
+* Return: Always void
 */
 void print_string(va_list *arg)
 {
