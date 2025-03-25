@@ -24,5 +24,8 @@ void print_char(va_list *args);
 void print_string(va_list *args);
 void print_int(va_list *args);
 void print_unsigned(va_list *args);
+void print_octal(va_list *args);
+void print_lower_hexadecimal(va_list *args);
+void print_upper_hexadecimal(va_list *args);
 
 #endif
