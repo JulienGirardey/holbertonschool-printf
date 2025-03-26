@@ -18,6 +18,12 @@ This project implements a simplified version of the `printf` function from the C
 - `%x`: Print a number in lowercase hexadecimal
 - `%X`: Print a number in uppercase hexadecimal
 
+## Flowchart
+
+This is a diagram to explain the logic:
+
+![Flowchart](Flowchart_printf.png)
+
 ## Installation
 
 You have to clone this repo and go in folder holbertonschool-printf:
@@ -78,12 +84,6 @@ if you modify a file, you need to compile before running:
 ```
     gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o printf
 ```
-
-## Flowchart
-
-This is a diagram to explain the logic:
-
-![Flowchart](Flowchart_printf.png)
 
 ## Authors
 
