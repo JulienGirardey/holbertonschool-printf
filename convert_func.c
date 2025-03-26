@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdarg.h>
 #include <stddef.h>
+#include <limits.h>
 
 /**
 * print_char - function use to print a char
@@ -30,7 +31,7 @@ int print_int(va_list *arg)
 
 	int digits[10];
 
-	int num = n;
+	long int num = n;
 
 	if (n < 0)
 	{
