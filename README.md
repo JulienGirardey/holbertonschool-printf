@@ -59,14 +59,10 @@ Character:[H]
 Character:[H]
 String:[I am a string !]
 String:[I am a string !]
-Address:[]
-Address:[0x7ffe637541f0]
 Percent:[%]
 Percent:[%]
 Len:[12]
 Len:[12]
-Unknown:[]
-Unknown:[%r]
 ```
 
 You can modify my test in `main.c`
