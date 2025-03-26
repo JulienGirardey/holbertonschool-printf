@@ -1,7 +1,3 @@
-# Project Title
-
-A brief description of what this project does and who it's for
-
 # Project Printf Holberton School
 
 A custom implementation of the printf function in C that handles various format specifiers.
