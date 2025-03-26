@@ -5,9 +5,9 @@
 *
 * @arg: unsigned integer to print
 *
-* Return: Always void
+* Return: Number of characters printed
 */
-void print_unsigned(va_list *arg)
+int print_unsigned(va_list *arg)
 {
 	unsigned int n = va_arg(*arg, unsigned int);
 
@@ -17,9 +17,12 @@ void print_unsigned(va_list *arg)
 
 	unsigned int num = n;
 
+	int count = 0;
+
 	if (n == 0)
 	{
 		_putchar('0');
+		count++;
 	}
 	else
 	{
@@ -27,6 +30,7 @@ void print_unsigned(va_list *arg)
 		{
 			digits[i] = num % 10;
 			num = num / 10;
+			count++;
 			i++;
 		}
 		while (i--)
@@ -34,6 +38,7 @@ void print_unsigned(va_list *arg)
 			_putchar(digits[i] + '0');
 		}
 	}
+	return (count);
 }
 
 /**
@@ -41,9 +46,9 @@ void print_unsigned(va_list *arg)
 *
 * @arg: octal to print
 *
-* Return: Always void
+* Return: Number of characters printed
 */
-void print_octal(va_list *arg)
+int print_octal(va_list *arg)
 {
 	unsigned int n = va_arg(*arg, unsigned int);
 
@@ -53,9 +58,12 @@ void print_octal(va_list *arg)
 
 	unsigned int num = n;
 
+	int count = 0;
+
 	if (n == 0)
 	{
 		_putchar('0');
+		count++;
 	}
 	else
 	{
@@ -63,6 +71,7 @@ void print_octal(va_list *arg)
 		{
 			digits[i] = num % 8;
 			num = num / 8;
+			count++;
 			i++;
 		}
 		while (i--)
@@ -70,6 +79,7 @@ void print_octal(va_list *arg)
 			_putchar(digits[i] + '0');
 		}
 	}
+	return (count);
 }
 
 /**
@@ -77,9 +87,9 @@ void print_octal(va_list *arg)
 *
 * @arg: hexadecimal to print
 *
-* Return: Always void
+* Return: Number of characters printed
 */
-void print_lower_hexadecimal(va_list *arg)
+int print_lower_hexadecimal(va_list *arg)
 {
 	unsigned int n = va_arg(*arg, unsigned int);
 
@@ -89,9 +99,12 @@ void print_lower_hexadecimal(va_list *arg)
 
 	unsigned int num = n;
 
+	int count = 0;
+
 	if (n == 0)
 	{
 		_putchar('0');
+		count++;
 	}
 	else
 	{
@@ -99,6 +112,7 @@ void print_lower_hexadecimal(va_list *arg)
 		{
 			digits[i] = num % 16;
 			num = num / 16;
+			count++;
 			i++;
 		}
 		while (i--)
@@ -111,6 +125,7 @@ void print_lower_hexadecimal(va_list *arg)
 			}
 		}
 	}
+	return (count);
 }
 
 /**
@@ -118,9 +133,9 @@ void print_lower_hexadecimal(va_list *arg)
 *
 * @arg: hexadecimal to print
 *
-* Return: Always void
+* Return: Number of characters printed
 */
-void print_upper_hexadecimal(va_list *arg)
+int print_upper_hexadecimal(va_list *arg)
 {
 	unsigned int n = va_arg(*arg, unsigned int);
 
@@ -130,9 +145,12 @@ void print_upper_hexadecimal(va_list *arg)
 
 	unsigned int num = n;
 
+	int count = 0;
+
 	if (n == 0)
 	{
 		_putchar('0');
+		count++;
 	}
 	else
 	{
@@ -140,6 +158,7 @@ void print_upper_hexadecimal(va_list *arg)
 		{
 			digits[i] = num % 16;
 			num = num / 16;
+			count++;
 			i++;
 		}
 		while (i--)
@@ -152,4 +171,5 @@ void print_upper_hexadecimal(va_list *arg)
 			}
 		}
 	}
+	return (count);
 }

@@ -17,15 +17,15 @@ typedef struct format
 {
 	char *type;
 
-	void (*print)(va_list *);
+	int (*print)(va_list *);
 } f_t;
 
-void print_char(va_list *args);
-void print_string(va_list *args);
-void print_int(va_list *args);
-void print_unsigned(va_list *args);
-void print_octal(va_list *args);
-void print_lower_hexadecimal(va_list *args);
-void print_upper_hexadecimal(va_list *args);
+int print_char(va_list *args);
+int print_string(va_list *args);
+int print_int(va_list *args);
+int print_unsigned(va_list *args);
+int print_octal(va_list *args);
+int print_lower_hexadecimal(va_list *args);
+int print_upper_hexadecimal(va_list *args);
 
 #endif

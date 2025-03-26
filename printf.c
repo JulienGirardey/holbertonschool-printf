@@ -15,6 +15,8 @@ int display_function(const char *format, va_list *args, f_t f[])
 {
 	int i = 0, j, count = 0;
 
+	int printed;
+
 	while (format && format[i])
 	{
 		if (format[i] == '%')
@@ -24,10 +26,10 @@ int display_function(const char *format, va_list *args, f_t f[])
 			{
 				if (format[i + 1] == f[j].type[0])
 				{
-					f[j].print(args);
+					printed = f[j].print(args);
+					count += printed;
 					break;
 				}
-				count++;
 				j++;
 			}
 			if (format[i + 1] == '%')

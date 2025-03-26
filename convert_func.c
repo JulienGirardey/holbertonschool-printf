@@ -7,11 +7,12 @@
 *
 * @arg: Character to print
 *
-* Return: Always void
+* Return: Number of characters printed
 */
-void print_char(va_list *arg)
+int print_char(va_list *arg)
 {
 	_putchar(va_arg(*arg, int));
+	return (1);
 }
 
 /**
@@ -19,9 +20,9 @@ void print_char(va_list *arg)
 *
 * @arg: integer to print
 *
-* Return: Always void
+* Return: Number of characters printed
 */
-void print_int(va_list *arg)
+int print_int(va_list *arg)
 {
 	int n = va_arg(*arg, int);
 
@@ -58,6 +59,7 @@ void print_int(va_list *arg)
 			i--;
 		}
 	}
+	return (count);
 }
 
 /**
@@ -65,17 +67,21 @@ void print_int(va_list *arg)
 *
 * @arg: string to print
 *
-* Return: Always void
+* Return: Number of characters printed
 */
-void print_string(va_list *arg)
+int print_string(va_list *arg)
 {
 	char *s = va_arg(*arg, char *);
+
+	int count = 0;
 
 	if (s == NULL)
 		s = "(nil)";
 	while (*s)
 	{
 		_putchar(*s);
+		count++;
 		s++;
 	}
+	return (count);
 }
