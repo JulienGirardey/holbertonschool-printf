@@ -71,6 +71,20 @@ Unknown:[%r]
 
 You can modify my test in `main.c`
 
+## Compilation
+
+if you modify a file, you need to compile before running:
+
+```
+    gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o printf
+```
+
+## Flowchart
+
+This is a diagram to explain the logic:
+
+![Flowchart](Flowchart_printf.png)
+
 ## Authors
 
 - [@JulienGirardey](https://github.com/JulienGirardey)
