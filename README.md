@@ -102,7 +102,7 @@ int main(void)
 
 ## Man _printf
 
-![Man]()
+![Man](/holbertonschool-printf/Images/Man.png)
 
 ## Running Tests
 
