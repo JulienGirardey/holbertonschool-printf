@@ -39,9 +39,9 @@ int display_function(const char *format, va_list *args, f_t f[])
 			}
 			else if (f[j].type == NULL)
 			{
-				_putchar(format[i]);
 				count++;
 				i--;
+				return (-1);
 			}
 			i++;
 		}
