@@ -79,6 +79,10 @@ int _printf(const char *format, ...)
 		{NULL, NULL}};
 
 	va_start(args, format);
+	if (format == NULL)
+	{
+		return (-1);
+	}
 	count = display_function(format, &args, f);
 	va_end(args);
 	return (count);
