@@ -77,7 +77,7 @@ int print_string(va_list *arg)
 	int count = 0;
 
 	if (s == NULL)
-		s = "(nil)";
+		s = "(null)";
 	while (*s)
 	{
 		_putchar(*s);
