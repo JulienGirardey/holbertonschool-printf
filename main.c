@@ -17,6 +17,9 @@ int main(void)
 
 	void *addr;
 
+	_printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+	printf("Complete the sentence: You %s nothing, Jon Snow.\n", (char *)0);
+
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
 	ui = (unsigned int)INT_MAX + 1024;
@@ -44,5 +47,11 @@ int main(void)
 	printf("Len:[%d]\n", len2);
 	_printf("Unknown:[%r]\n");
 	printf("Unknown:[%r]\n");
+	len = _printf("%");
+	len2 = printf("%");
+	_printf("Length:[%d, %i]\n", len, len);
+	printf("Length true :[%d, %i]\n", len2, len2);
+    _printf("%!\n");
+    printf("%!\n");
 	return (0);
 }
