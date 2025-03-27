@@ -13,9 +13,7 @@
 */
 int display_function(const char *format, va_list *args, f_t f[])
 {
-	int i = 0, j, count = 0;
-
-	int printed;
+	int i = 0, j, count = 0, printed;
 
 	while (format && format[i])
 	{
@@ -33,9 +31,7 @@ int display_function(const char *format, va_list *args, f_t f[])
 				j++;
 			}
 			if (format[i] == '%' && format[i + 1] == '\0')
-			{
 				return (-1);
-			}
 			if (format[i + 1] == '%')
 			{
 				_putchar('%');
