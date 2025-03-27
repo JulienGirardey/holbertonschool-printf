@@ -102,7 +102,7 @@ int main(void)
 
 ## Man _printf
 
-![Man](/holbertonschool-printf/Images/Man.png)
+![image](https://github.com/user-attachments/assets/defba0d6-3449-4af5-af0c-a93aa2a98cca)
 
 ## Running Tests
 
