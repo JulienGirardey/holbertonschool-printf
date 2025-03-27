@@ -32,6 +32,10 @@ int display_function(const char *format, va_list *args, f_t f[])
 				}
 				j++;
 			}
+			if (format[i] == '%' && format[i + 1] == '\0')
+			{
+				return (-1);
+			}
 			if (format[i + 1] == '%')
 			{
 				_putchar('%');
@@ -39,9 +43,9 @@ int display_function(const char *format, va_list *args, f_t f[])
 			}
 			else if (f[j].type == NULL)
 			{
+				_putchar('%');
 				count++;
 				i--;
-				return (-1);
 			}
 			i++;
 		}
