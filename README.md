@@ -32,7 +32,7 @@ All your files can be compiled on Ubuntu and IOS.
 
 This is a diagram to explain the logic:
 
-![Flowchart](/holbertonschool-printf/Images/Flowchart_printf.png)
+![image](https://github.com/user-attachments/assets/2a81812e-d64d-4000-81d9-a4edfd303253)
 
 ## How use this function
 
