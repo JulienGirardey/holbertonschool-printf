@@ -37,6 +37,12 @@ int display_function(const char *format, va_list *args, f_t f[])
 				_putchar('%');
 				count++;
 			}
+			else if (f[j].type == NULL)
+			{
+				_putchar(format[i]);
+				count++;
+				i--;
+			}
 			i++;
 		}
 		else
